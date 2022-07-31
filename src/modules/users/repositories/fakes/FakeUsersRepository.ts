@@ -7,7 +7,7 @@ import User from '../../infra/typeorm/entities/User';
 import { uuid } from 'uuidv4';
 
 
-class UsersRepository implements IUsersRepositories {
+class FakeUsersRepository implements IUsersRepositories {
 
   private users: User[] = [];
 
@@ -44,4 +44,4 @@ class UsersRepository implements IUsersRepositories {
     return user;
   }
 }
-export default UsersRepository;
+export default FakeUsersRepository;
